@@ -15,7 +15,7 @@ app.post('/proxy-n8n', async (req, res) => {
 
     try {
         const response = await axios.post(
-            "https://n8n-render-lamachine-aal0.onrender.com/webhook/10971c03-b2c5-4406-8154-461807f36f55",
+            "http://localhost:5678/webhook/<ID_WEBHOOK>",
             req.body,
             { headers: { "Content-Type": "application/json" } }
         );
