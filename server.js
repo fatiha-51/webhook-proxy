@@ -15,7 +15,7 @@ app.post('/proxy-n8n', async (req, res) => {
 
     try {
         const response = await axios.post(
-            "http://localhost:5678/webhook/<ID_WEBHOOK>",
+            "http://localhost:5678/webhook/mabatpro",
             req.body,
             { headers: { "Content-Type": "application/json" } }
         );
